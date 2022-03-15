@@ -3,7 +3,7 @@
     "predeploy": "npm run build"
   },
   "hosting": {
-    "public": "public",
+    "public": "out",
     "ignore": [
       "**/src/**",
       "**/.vscode/**",
