@@ -2,13 +2,15 @@ import styles from "../styles/Header.module.scss";
 import { useRouter } from "next/router";
 import react, { useState, useEffect } from "react";
 
-const Header = ({ setCurrentPortfolio }) => {
+const Header = ({ setCurrentPortfolio, setPreanimationState }) => {
   const router = useRouter();
 
   const shallowRouting = (url) => {
+    setPreanimationState(url);
     router.push(`?${url}`, undefined, { shallow: true });
-    setCurrentPortfolio(url);
-    //router.push('/?counter=10', undefined, { shallow: true })
+    setTimeout(() => {
+      setCurrentPortfolio(url);
+    }, 500);
   };
 
   return (
@@ -33,13 +35,18 @@ const Header = ({ setCurrentPortfolio }) => {
             Graphic Design
           </div>
           <div
-            id="book-publishing"
+            id="translation-and-publishing"
             onClick={(e) => shallowRouting(e.target.id)}
           >
-            Book Publishing
+            Translation & Publishing
           </div>
-          <div id="translation" onClick={(e) => shallowRouting(e.target.id)}>
-            Translation
+
+          <div
+            id="about-me"
+            className={styles.aboutMeBtn}
+            onClick={(e) => shallowRouting("landing-page")}
+          >
+            Contact
           </div>
         </div>
       </div>

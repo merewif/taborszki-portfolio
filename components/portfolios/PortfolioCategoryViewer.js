@@ -1,28 +1,32 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useLayoutEffect } from "react";
 import styles from "../../styles/PortfolioCategoryViewer.module.scss";
 import { motion } from "framer-motion";
 import { useAnimation } from "framer-motion";
 
-const h1TransitionVariants = {
-  hidden: { opacity: 0, x: -100 },
-  visible: { opacity: 1, x: [-1000, 0] },
-};
-
-const portfolioTransitionVariants = {
-  hidden: { opacity: 0 },
-  visible: { opacity: [0, 1] },
-};
-
 export default function PortfolioCategoryViewer({
   currentPortfolio,
   portfolioElements,
+  preanimationState,
   setCurrentElement,
 }) {
-  const controls = useAnimation();
+  const transitionVariants = {
+    hidden: { opacity: 0, x: [0, 1000] },
+    visible: { opacity: 1, x: [-1000, 0] },
+  };
+
+  const animationControls = useAnimation();
+
+  function swipeAnimation() {
+    console.log("ok");
+    animationControls.start("hidden");
+    setTimeout(() => {
+      animationControls.start("visible");
+    }, 500);
+  }
 
   useEffect(() => {
-    controls.start("visible");
-  }, [controls, currentPortfolio]);
+    swipeAnimation();
+  }, [preanimationState]);
 
   if (currentPortfolio === "landing-page" || !currentPortfolio.length)
     return null;
@@ -34,8 +38,8 @@ export default function PortfolioCategoryViewer({
           <motion.h1
             className={styles.portfolioTitle}
             initial="hidden"
-            animate={controls}
-            variants={h1TransitionVariants}
+            animate={animationControls}
+            variants={transitionVariants}
             transition={{
               duration: 0.5,
             }}
@@ -45,10 +49,10 @@ export default function PortfolioCategoryViewer({
           <motion.h1
             className={styles.portfolioTitle}
             initial="hidden"
-            animate={controls}
-            variants={h1TransitionVariants}
+            animate={animationControls}
+            variants={transitionVariants}
             transition={{
-              duration: 0.5,
+              duration: 0.55,
             }}
           >
             portfolio
@@ -56,8 +60,8 @@ export default function PortfolioCategoryViewer({
         </div>
         <motion.div
           initial="hidden"
-          animate={controls}
-          variants={h1TransitionVariants}
+          animate={animationControls}
+          variants={transitionVariants}
           transition={{ duration: 0.65 }}
           className={styles.itemsContainer}
         >

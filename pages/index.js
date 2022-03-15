@@ -11,6 +11,7 @@ export default function Home() {
   const [currentElement, setCurrentElement] = useState();
   const [currentPortfolio, setCurrentPortfolio] = useState("");
   const [portfolioElements, setPortfolioElements] = useState([]);
+  const [preanimationState, setPreanimationState] = useState(false);
   const router = useRouter();
 
   useEffect(() => {
@@ -28,7 +29,10 @@ export default function Home() {
         <meta name="description" content="The Portfolio of Bálint Táborszki" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header setCurrentPortfolio={setCurrentPortfolio} />
+      <Header
+        setCurrentPortfolio={setCurrentPortfolio}
+        setPreanimationState={setPreanimationState}
+      />
       <main className={styles.main}>
         {currentElement ? (
           <PortfolioElementViewer
@@ -37,6 +41,7 @@ export default function Home() {
           />
         ) : (
           <PortfolioCategoryViewer
+            preanimationState={preanimationState}
             currentPortfolio={currentPortfolio}
             setCurrentElement={setCurrentElement}
           />

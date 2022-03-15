@@ -12,10 +12,15 @@
   gap: 1rem;
   margin-right: 20px;
   margin-left: auto;
+  div {
+    cursor: pointer;
+    padding: 10px;
+  }
 }
 
-.menuContainer > div {
-  cursor: pointer;
+.aboutMeBtn {
+  background: white;
+  color: black;
 }
 
 .label {
