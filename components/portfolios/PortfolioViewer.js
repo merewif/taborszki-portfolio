@@ -1,14 +1,14 @@
-import React, { useEffect } from "react";
-import styles from "../../styles/PortfolioCategoryViewer.module.scss";
+import React, { useState, useEffect } from "react";
+import styles from "../../styles/PortfolioViewer.module.scss";
 import { motion } from "framer-motion";
 import { useAnimation } from "framer-motion";
 import ModuleDealer from "../ModuleDealer";
 
-export default function PortfolioCategoryViewer({
+export default function PortfolioViewer({
   currentPortfolio,
   preanimationState,
-  setCurrentElement,
 }) {
+  const [elementToOpen, setElementToOpen] = useState("AboutMe");
   const transitionVariants = {
     hidden: { opacity: [1, 0], x: [0, 1000] },
     visible: { opacity: [0, 1], x: [-1000, 0] },
@@ -26,6 +26,23 @@ export default function PortfolioCategoryViewer({
   useEffect(() => {
     swipeAnimation();
   }, [preanimationState]);
+
+  useEffect(() => {
+    // Show Frontend Portfolio
+    if (currentPortfolio === "frontend-development")
+      setElementToOpen("ListOfProjects");
+
+    // Show Landing Page
+    if (currentPortfolio === "hello-there.") setElementToOpen("AboutMe");
+
+    // Show Graphic Design Portfolio
+    if (currentPortfolio === "graphic-design")
+      setElementToOpen("graphic-design-portfolio");
+
+    // Show Translation  Portfolio
+    if (currentPortfolio === "translation-and-publishing")
+      setElementToOpen("translation-portfolio");
+  }, [currentPortfolio]);
 
   return (
     <div className={styles.container}>
@@ -71,7 +88,7 @@ export default function PortfolioCategoryViewer({
           transition={{ duration: 0.65 }}
           className={styles.itemsContainer}
         >
-          <ModuleDealer currentModule={"ListOfProjects"} />
+          <ModuleDealer currentModule={elementToOpen} />
         </motion.div>
       </div>
     </div>

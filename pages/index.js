@@ -4,13 +4,10 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import react, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import PortfolioCategoryViewer from "../components/portfolios/PortfolioCategoryViewer";
-import PortfolioElementViewer from "../components/portfolios/PortfolioElementViewer";
+import PortfolioViewer from "../components/portfolios/PortfolioViewer";
 
 export default function Home() {
-  const [currentElement, setCurrentElement] = useState();
   const [currentPortfolio, setCurrentPortfolio] = useState("hello-there.");
-  const [portfolioElements, setPortfolioElements] = useState([]);
   const [preanimationState, setPreanimationState] = useState(false);
   const router = useRouter();
 
@@ -34,18 +31,10 @@ export default function Home() {
         setPreanimationState={setPreanimationState}
       />
       <main className={styles.main}>
-        {currentElement ? (
-          <PortfolioElementViewer
-            currentElement={currentElement}
-            setCurrentElement={setCurrentElement}
-          />
-        ) : (
-          <PortfolioCategoryViewer
-            preanimationState={preanimationState}
-            currentPortfolio={currentPortfolio}
-            setCurrentElement={setCurrentElement}
-          />
-        )}
+        <PortfolioViewer
+          preanimationState={preanimationState}
+          currentPortfolio={currentPortfolio}
+        />
       </main>
 
       <Footer />

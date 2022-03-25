@@ -31,11 +31,26 @@ export default function ModuleDealer({ currentModule }) {
   if (currentModule === "Plotter") return <Plotter />;
 
   // Graphic Design Portfolio
+  if (currentModule === "graphic-design-portfolio")
+    return (
+      <>
+        <ApparelDesign />
+        <BlogDesign />
+        <BookCovers />
+      </>
+    );
   if (currentModule === "ApparelDesign") return <ApparelDesign />;
   if (currentModule === "BlogDesign") return <BlogDesign />;
   if (currentModule === "BookCovers") return <BookCovers />;
 
   // Translation Portfolio
+  if (currentModule === "translation-portfolio")
+    return (
+      <>
+        <Excerpts />
+        <ListOfTranslatedBooks />
+      </>
+    );
   if (currentModule === "Excerpts") return <Excerpts />;
   if (currentModule === "ListOfTranslatedBooks")
     return <ListOfTranslatedBooks />;
