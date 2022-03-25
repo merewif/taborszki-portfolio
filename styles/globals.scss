@@ -15,8 +15,6 @@ a {
 
 * {
   box-sizing: border-box;
-  background: black;
-  color: white;
 }
 
 html {
@@ -28,4 +26,17 @@ html {
 html::-webkit-scrollbar {
   background-color: #fff;
   width: 8px;
+}
+
+.MuiButton-root {
+  background: white;
+  color: black;
+  font-family: "Montserrat";
+  font-weight: 900;
+  border: 1px solid white;
+}
+
+.MuiButton-root:hover {
+  background: black;
+  color: white;
 }

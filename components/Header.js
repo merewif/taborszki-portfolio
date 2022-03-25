@@ -1,6 +1,7 @@
 import styles from "../styles/Header.module.scss";
 import { useRouter } from "next/router";
 import react, { useState, useEffect } from "react";
+import Button from "@mui/material/Button";
 
 const Header = ({ setCurrentPortfolio, setPreanimationState }) => {
   const router = useRouter();
@@ -17,7 +18,7 @@ const Header = ({ setCurrentPortfolio, setPreanimationState }) => {
     <header className={styles.header}>
       <div
         className={styles.name}
-        onClick={(e) => shallowRouting("landing-page")}
+        onClick={(e) => shallowRouting("hello-there.")}
       >
         <div>Bálint</div>
         <div>Táborszki</div>
@@ -41,12 +42,13 @@ const Header = ({ setCurrentPortfolio, setPreanimationState }) => {
             Translation & Publishing
           </div>
 
-          <div
-            id="about-me"
-            className={styles.aboutMeBtn}
-            onClick={(e) => shallowRouting("landing-page")}
-          >
-            Contact
+          <div>
+            <Button
+              variant="contained"
+              onClick={(e) => shallowRouting("hello-there.")}
+            >
+              Contact Me
+            </Button>
           </div>
         </div>
       </div>

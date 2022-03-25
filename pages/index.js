@@ -9,7 +9,7 @@ import PortfolioElementViewer from "../components/portfolios/PortfolioElementVie
 
 export default function Home() {
   const [currentElement, setCurrentElement] = useState();
-  const [currentPortfolio, setCurrentPortfolio] = useState("");
+  const [currentPortfolio, setCurrentPortfolio] = useState("hello-there.");
   const [portfolioElements, setPortfolioElements] = useState([]);
   const [preanimationState, setPreanimationState] = useState(false);
   const router = useRouter();
