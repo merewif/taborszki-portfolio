@@ -2,8 +2,7 @@ import React from "react";
 
 // Frontend Portfolio
 import ListOfProjects from "./portfolios/frontend-development/ListOfProjects";
-import Publishing from "./portfolios/book-publishing/Publishing";
-import AuthorWebsite from "./portfolios/frontend-development/AuthorWebsite";
+import VisualNovel from "./portfolios/frontend-development/VisualNovel";
 import Loretracker from "./portfolios/frontend-development/Loretracker";
 import Plotter from "./portfolios/frontend-development/Plotter";
 
@@ -13,6 +12,7 @@ import BlogDesign from "./portfolios/graphic-design/BlogDesign";
 import BookCovers from "./portfolios/graphic-design/BookCovers";
 
 // Translation Portfolio
+import Publishing from "./portfolios/book-publishing/Publishing";
 import Excerpts from "./portfolios/translation/Excerpts";
 import ListOfTranslatedBooks from "./portfolios/translation/ListOfTranslatedBooks";
 
@@ -24,9 +24,16 @@ export default function ModuleDealer({ currentModule }) {
   if (currentModule === "AboutMe") return <AboutMe />;
 
   // Frontend Portfolio
+  if (currentModule === "frontend-portfolio")
+    return (
+      <>
+        <Plotter />
+        <VisualNovel />
+        <Loretracker />
+      </>
+    );
   if (currentModule === "ListOfProjects") return <ListOfProjects />;
-  if (currentModule === "Publishing") return <Publishing />;
-  if (currentModule === "AuthorWebsite") return <AuthorWebsite />;
+  if (currentModule === "VisualNovel") return <VisualNovel />;
   if (currentModule === "Loretracker") return <Loretracker />;
   if (currentModule === "Plotter") return <Plotter />;
 
@@ -47,11 +54,13 @@ export default function ModuleDealer({ currentModule }) {
   if (currentModule === "translation-portfolio")
     return (
       <>
+        <Publishing />
         <Excerpts />
         <ListOfTranslatedBooks />
       </>
     );
   if (currentModule === "Excerpts") return <Excerpts />;
+  if (currentModule === "Publishing") return <Publishing />;
   if (currentModule === "ListOfTranslatedBooks")
     return <ListOfTranslatedBooks />;
 

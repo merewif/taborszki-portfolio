@@ -9,20 +9,18 @@ export default function PortfolioViewer({
   preanimationState,
 }) {
   const [elementToOpen, setElementToOpen] = useState("AboutMe");
+
   const transitionVariants = {
     hidden: { opacity: [1, 0], x: [0, 1000] },
     visible: { opacity: [0, 1], x: [-1000, 0] },
   };
-
   const animationControls = useAnimation();
-
   function swipeAnimation() {
     animationControls.start("hidden");
     setTimeout(() => {
       animationControls.start("visible");
     }, 500);
   }
-
   useEffect(() => {
     swipeAnimation();
   }, [preanimationState]);
@@ -30,7 +28,7 @@ export default function PortfolioViewer({
   useEffect(() => {
     // Show Frontend Portfolio
     if (currentPortfolio === "frontend-development")
-      setElementToOpen("ListOfProjects");
+      setElementToOpen("frontend-portfolio");
 
     // Show Landing Page
     if (currentPortfolio === "hello-there.") setElementToOpen("AboutMe");

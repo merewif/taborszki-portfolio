@@ -40,3 +40,16 @@ html::-webkit-scrollbar {
   background: black;
   color: white;
 }
+
+.control-dots {
+  display: none !important;
+}
+
+.thumbs-wrapper.axis-vertical {
+  display: flex;
+
+  ul {
+    margin-inline: auto;
+    padding: 0;
+  }
+}
