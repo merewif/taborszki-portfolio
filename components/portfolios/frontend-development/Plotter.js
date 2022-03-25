@@ -4,7 +4,7 @@ import Fade from "@mui/material/Fade";
 import Modal from "@mui/material/Modal";
 import React, { useState } from "react";
 import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import styles from "../../../styles/Frontend.module.scss";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import CollectionsIcon from "@mui/icons-material/Collections";
@@ -63,7 +63,7 @@ export default function Plotter() {
           plot charts, systemize their worldbuilding and brainstorm about their
           characters.
         </p>
-        <h3>Why did I write it?</h3>
+        <h3>Background</h3>
         <p>
           The inspiration for the project found me when I began working on my
           own novel and I thought it would be really useful to have a tool with
