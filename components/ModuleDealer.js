@@ -42,7 +42,7 @@ export default function ModuleDealer({ currentModule }) {
     return (
       <>
         <ApparelDesign />
-        <BlogDesign />
+        {/*<BlogDesign /> */}
         <BookCovers />
       </>
     );
