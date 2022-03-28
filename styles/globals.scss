@@ -29,16 +29,16 @@ html::-webkit-scrollbar {
 }
 
 .MuiButton-root {
-  background: white;
-  color: black;
-  font-family: "Montserrat";
-  font-weight: 900;
-  border: 1px solid white;
+  background: white !important;
+  color: black !important;
+  font-family: "Montserrat" !important;
+  font-weight: 900 !important;
+  border: 1px solid white !important;
 }
 
 .MuiButton-root:hover {
-  background: black;
-  color: white;
+  background: black !important;
+  color: white !important;
 }
 
 .control-dots {

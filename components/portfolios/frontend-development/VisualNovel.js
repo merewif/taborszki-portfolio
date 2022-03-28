@@ -9,6 +9,8 @@ import styles from "../../../styles/Frontend.module.scss";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import CollectionsIcon from "@mui/icons-material/Collections";
 import InsertLinkIcon from "@mui/icons-material/InsertLink";
+import IconButton from "@mui/material/IconButton";
+import CloseIcon from "@mui/icons-material/Close";
 
 export default function VisualNovel() {
   const [openVNGallery, setOpenVNGallery] = useState(false);
@@ -17,7 +19,7 @@ export default function VisualNovel() {
     <div className={styles.card}>
       <div className={styles.info}>
         <h1>Beyond Mortal: The Visual Novel</h1>
-        <h3>What is Beyond Mortal?</h3>
+        <h3>About</h3>
         <p>Beyond Mortal is a browser-based interactive fiction video game.</p>
         <h3>Background</h3>
         <p>
@@ -63,54 +65,68 @@ export default function VisualNovel() {
           }}
         >
           <Fade in={openVNGallery}>
-            <div
-              className={styles.galleryContainer}
-              id={styles.visualNovelGallery}
-            >
-              <Carousel>
-                <div className={styles.galleryImage}>
-                  <img src="./images/beyond-mortal/1.png" />
-                  <p>
-                    Players can earn various achievements based on the choices
-                    they make throughout the game.
-                  </p>
-                </div>
-                <div className={styles.galleryImage}>
-                  <img src="./images/beyond-mortal/2.png" />
-                  <p>
-                    The visual novel is divided into chapters for ease of
-                    replayability.
-                  </p>
-                </div>
-                <div className={styles.galleryImage}>
-                  <img src="./images/beyond-mortal/3.png" />
-                  <p>
-                    Click by click the game presents the user the next sentence
-                    of the story. Savegame files can be downloaded for sharing
-                    or safekeeping with the save button at the top right corner;
-                    the savegame files can be loaded back into the game via the
-                    main menu.
-                  </p>
-                </div>
-                <div className={styles.galleryImage}>
-                  <img src="./images/beyond-mortal/4.png" />
-                  <p>
-                    As an interactive video game, player choice determines the
-                    course of the story.
-                  </p>
-                </div>
-                <div className={styles.galleryImage}>
-                  <img src="./images/beyond-mortal/5.png" />
-                  <p>The game is fully optimized for mobile screens.</p>
-                </div>
-                <div className={styles.galleryImage}>
-                  <img src="./images/beyond-mortal/6.png" />
-                  <p>
-                    The game is installable through the browser as a Progressive
-                    Web App (PWA).
-                  </p>
-                </div>
-              </Carousel>
+            <div>
+              <IconButton
+                aria-label="close"
+                onClick={() => setOpenVNGallery(false)}
+                sx={{
+                  position: "absolute",
+                  right: 8,
+                  top: 8,
+                  color: "white",
+                }}
+              >
+                <CloseIcon />
+              </IconButton>
+              <div
+                className={styles.galleryContainer}
+                id={styles.visualNovelGallery}
+              >
+                <Carousel>
+                  <div className={styles.galleryImage}>
+                    <img src="./images/beyond-mortal/1.png" />
+                    <p>
+                      Players can earn various achievements based on the choices
+                      they make throughout the game.
+                    </p>
+                  </div>
+                  <div className={styles.galleryImage}>
+                    <img src="./images/beyond-mortal/2.png" />
+                    <p>
+                      The visual novel is divided into chapters for ease of
+                      replayability.
+                    </p>
+                  </div>
+                  <div className={styles.galleryImage}>
+                    <img src="./images/beyond-mortal/3.png" />
+                    <p>
+                      Click by click the game presents the user the next
+                      sentence of the story. Savegame files can be downloaded
+                      for sharing or safekeeping with the save button at the top
+                      right corner; the savegame files can be loaded back into
+                      the game via the main menu.
+                    </p>
+                  </div>
+                  <div className={styles.galleryImage}>
+                    <img src="./images/beyond-mortal/4.png" />
+                    <p>
+                      As an interactive video game, player choice determines the
+                      course of the story.
+                    </p>
+                  </div>
+                  <div className={styles.galleryImage}>
+                    <img src="./images/beyond-mortal/5.png" />
+                    <p>The game is fully optimized for mobile screens.</p>
+                  </div>
+                  <div className={styles.galleryImage}>
+                    <img src="./images/beyond-mortal/6.png" />
+                    <p>
+                      The game is installable through the browser as a
+                      Progressive Web App (PWA).
+                    </p>
+                  </div>
+                </Carousel>
+              </div>
             </div>
           </Fade>
         </Modal>

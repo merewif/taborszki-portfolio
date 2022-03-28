@@ -10,6 +10,8 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import CollectionsIcon from "@mui/icons-material/Collections";
 import DownloadIcon from "@mui/icons-material/Download";
 import InsertLinkIcon from "@mui/icons-material/InsertLink";
+import IconButton from "@mui/material/IconButton";
+import CloseIcon from "@mui/icons-material/Close";
 
 export default function Plotter() {
   const [openGallery, setOpenGallery] = useState(false);
@@ -57,7 +59,7 @@ export default function Plotter() {
       </div>
       <div className={styles.info}>
         <h1>Plotter</h1>
-        <h3>What is Plotter?</h3>
+        <h3>About</h3>
         <p>
           Plotter is a web application designed to help writers visualize their
           plot charts, systemize their worldbuilding and brainstorm about their
@@ -103,45 +105,60 @@ export default function Plotter() {
           }}
         >
           <Fade in={openGallery}>
-            <div className={styles.galleryContainer}>
-              <Carousel>
-                <div className={styles.galleryImage}>
-                  <img src="./images/plotter/1.png" />
-                  <p>
-                    Users are prompted to think about the various aspects of
-                    their world with the placeholder texts of the input fields.
-                  </p>
-                </div>
-                <div>
-                  <img src="./images/plotter/2.png" />
-                  <p>
-                    Users can create their custom story charts using the
-                    embedded Google Line Chart function.
-                  </p>
-                </div>
-                <div>
-                  <img src="./images/plotter/3.png" />
-                  <p>
-                    Users can add images they associate with their characters,
-                    their plot or their worldbuilding entries using the
-                    <strong> MOODBOARD</strong> component.
-                  </p>
-                </div>
-                <div>
-                  <img src="./images/plotter/4.png" />
-                  <p>
-                    Red box shadow reminds the user to save their progress if
-                    there are unsaved changes.
-                  </p>
-                </div>
-                <div>
-                  <img src="./images/plotter/5.png" />
-                  <p>
-                    MUI Components are used liberally throughout the
-                    application.
-                  </p>
-                </div>
-              </Carousel>
+            <div>
+              <IconButton
+                aria-label="close"
+                onClick={() => setOpenGallery(false)}
+                sx={{
+                  position: "absolute",
+                  right: 8,
+                  top: 8,
+                  color: "white",
+                }}
+              >
+                <CloseIcon />
+              </IconButton>
+              <div className={styles.galleryContainer}>
+                <Carousel>
+                  <div className={styles.galleryImage}>
+                    <img src="./images/plotter/1.png" />
+                    <p>
+                      Users are prompted to think about the various aspects of
+                      their world with the placeholder texts of the input
+                      fields.
+                    </p>
+                  </div>
+                  <div>
+                    <img src="./images/plotter/2.png" />
+                    <p>
+                      Users can create their custom story charts using the
+                      embedded Google Line Chart function.
+                    </p>
+                  </div>
+                  <div>
+                    <img src="./images/plotter/3.png" />
+                    <p>
+                      Users can add images they associate with their characters,
+                      their plot or their worldbuilding entries using the
+                      <strong> MOODBOARD</strong> component.
+                    </p>
+                  </div>
+                  <div>
+                    <img src="./images/plotter/4.png" />
+                    <p>
+                      Red box shadow reminds the user to save their progress if
+                      there are unsaved changes.
+                    </p>
+                  </div>
+                  <div>
+                    <img src="./images/plotter/5.png" />
+                    <p>
+                      MUI Components are used liberally throughout the
+                      application.
+                    </p>
+                  </div>
+                </Carousel>
+              </div>
             </div>
           </Fade>
         </Modal>
