@@ -36,8 +36,6 @@ export default function Home() {
           currentPortfolio={currentPortfolio}
         />
       </main>
-
-      <Footer />
     </div>
   );
 }
