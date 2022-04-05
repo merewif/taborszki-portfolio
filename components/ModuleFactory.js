@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 // Frontend Portfolio
 import ListOfProjects from "./portfolios/frontend-development/ListOfProjects";
@@ -25,7 +25,6 @@ import galleryStyles from "../styles/Gallery.module.scss";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
-import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 export default function ModuleFactory({ currentModule }) {
