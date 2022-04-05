@@ -27,8 +27,6 @@ export default function ApparelDesign() {
   ];
   return (
     <>
-      <h1>APPAREL DESIGN</h1>
-
       <Box sx={{ width: "100%", minHeight: 829 }}>
         <Masonry columns={3} spacing={2}>
           {IMAGES.map((item, index) => (
