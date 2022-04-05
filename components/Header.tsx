@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 
 interface HeaderProps {
   setCurrentPortfolio: React.Dispatch<React.SetStateAction<string>>;
-  setPreanimationState: React.Dispatch<React.SetStateAction<string>>;
+  setPreanimationState: React.Dispatch<React.SetStateAction<boolean | string>>;
 }
 
 const Header = ({ setCurrentPortfolio, setPreanimationState }: HeaderProps) => {

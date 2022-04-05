@@ -22,11 +22,6 @@ import ListOfTranslatedBooks from './portfolios/translation/ListOfTranslatedBook
 // Welcome Page
 import AboutMe from './AboutMe';
 
-// CSS
-import galleryStyles from '../styles/Gallery.module.scss';
-
-// MUI
-
 interface ModuleFactoryProps {
   currentModule: string;
 }
@@ -164,10 +159,7 @@ export default function ModuleFactory({ currentModule }: ModuleFactoryProps) {
             </p>
           </AccordionSummary>
           <AccordionDetails sx={{ background: 'black' }}>
-            <Gallery
-              files={blogcovers}
-              galleryStyle={galleryStyles.nonApparel}
-            />
+            <Gallery files={blogcovers} />
           </AccordionDetails>
         </Accordion>
 
@@ -194,10 +186,7 @@ export default function ModuleFactory({ currentModule }: ModuleFactoryProps) {
             </p>
           </AccordionSummary>
           <AccordionDetails sx={{ background: 'black' }}>
-            <Gallery
-              files={bookcovers}
-              galleryStyle={galleryStyles.nonApparel}
-            />
+            <Gallery files={bookcovers} />
           </AccordionDetails>
         </Accordion>
       </>

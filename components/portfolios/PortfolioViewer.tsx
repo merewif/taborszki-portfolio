@@ -7,7 +7,7 @@ import ModuleFactory from '../ModuleFactory';
 
 interface PortfolioViewerProps {
   currentPortfolio: string;
-  preanimationState: boolean;
+  preanimationState: boolean | string;
 }
 
 export default function PortfolioViewer({

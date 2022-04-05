@@ -7,7 +7,9 @@ import PortfolioViewer from '../components/portfolios/PortfolioViewer';
 
 export default function Home() {
   const [currentPortfolio, setCurrentPortfolio] = useState('hello-there.');
-  const [preanimationState, setPreanimationState] = useState(false);
+  const [preanimationState, setPreanimationState] = useState<boolean | string>(
+    false
+  );
   const router = useRouter();
 
   useEffect(() => {
