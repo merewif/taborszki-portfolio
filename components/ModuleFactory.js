@@ -47,6 +47,44 @@ export default function ModuleFactory({ currentModule }) {
 
   // Graphic Design Portfolio
   if (currentModule === "graphic-design-portfolio") {
+    const bookcovers = [
+      ".\\images\\book-covers/1.png",
+      ".\\images\\book-covers/10.png",
+      ".\\images\\book-covers/2.png",
+      ".\\images\\book-covers/3.png",
+      ".\\images\\book-covers/4.png",
+      ".\\images\\book-covers/5.png",
+      ".\\images\\book-covers/6.png",
+      ".\\images\\book-covers/7.png",
+      ".\\images\\book-covers/8.png",
+      ".\\images\\book-covers/9.jpg",
+    ];
+    const blogcovers = [
+      ".\\images\\blogpost-images/1.webp",
+      ".\\images\\blogpost-images/10.webp",
+      ".\\images\\blogpost-images/11.webp",
+      ".\\images\\blogpost-images/12.webp",
+      ".\\images\\blogpost-images/13.webp",
+      ".\\images\\blogpost-images/15.webp",
+      ".\\images\\blogpost-images/16.webp",
+      ".\\images\\blogpost-images/17.webp",
+      ".\\images\\blogpost-images/18.webp",
+      ".\\images\\blogpost-images/19.webp",
+      ".\\images\\blogpost-images/2.webp",
+      ".\\images\\blogpost-images/20.webp",
+      ".\\images\\blogpost-images/21.webp",
+      ".\\images\\blogpost-images/22.webp",
+      ".\\images\\blogpost-images/23.webp",
+      ".\\images\\blogpost-images/24.webp",
+      ".\\images\\blogpost-images/25.webp",
+      ".\\images\\blogpost-images/26.webp",
+      ".\\images\\blogpost-images/3.webp",
+      ".\\images\\blogpost-images/4.webp",
+      ".\\images\\blogpost-images/5.webp",
+      ".\\images\\blogpost-images/6.webp",
+      ".\\images\\blogpost-images/7.webp",
+      ".\\images\\blogpost-images/9.webp",
+    ];
     return (
       <>
         <div
@@ -129,7 +167,7 @@ export default function ModuleFactory({ currentModule }) {
           </AccordionSummary>
           <AccordionDetails sx={{ background: "black" }}>
             <Gallery
-              files={"blogpost-images"}
+              files={blogcovers}
               galleryStyle={galleryStyles.nonApparel}
             />
           </AccordionDetails>
@@ -159,7 +197,7 @@ export default function ModuleFactory({ currentModule }) {
           </AccordionSummary>
           <AccordionDetails sx={{ background: "black" }}>
             <Gallery
-              files={"book-covers"}
+              files={bookcovers}
               galleryStyle={galleryStyles.nonApparel}
             />
           </AccordionDetails>
