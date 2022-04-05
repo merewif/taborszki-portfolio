@@ -108,13 +108,6 @@ export default function ModuleFactory({ currentModule }) {
             States to India. Lastly I went on to design book covers for dozens
             of books.
           </p>
-          <p>
-            I do not consider myself a particularly exceptional designer - or
-            rather, I am painfully aware of my limitations - but the knowledge
-            that many hundreds of people are wearing the designs I created and
-            keep copies of books I designed on their bookselves fills my heart
-            with tremendous pride and joy.
-          </p>
         </div>
         <Accordion>
           <AccordionSummary
