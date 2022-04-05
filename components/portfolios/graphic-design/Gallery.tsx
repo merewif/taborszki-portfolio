@@ -9,7 +9,7 @@ export default function Gallery({ files, galleryStyle }) {
   return (
     <>
       <div className={galleryStyle}>
-        {files.map((imgPath, i) => (
+        {files.map((imgPath: string, i: number) => (
           <img src={imgPath} key={i} alt="" />
         ))}
       </div>

@@ -1,7 +1,7 @@
-import styles from "../styles/Header.module.scss";
-import { useRouter } from "next/router";
-import react, { useState, useEffect } from "react";
-import Button from "@mui/material/Button";
+import styles from '../styles/Header.module.scss';
+import { useRouter } from 'next/router';
+import react, { useState, useEffect } from 'react';
+import Button from '@mui/material/Button';
 
 const Header = ({ setCurrentPortfolio, setPreanimationState }) => {
   const router = useRouter();
@@ -18,7 +18,7 @@ const Header = ({ setCurrentPortfolio, setPreanimationState }) => {
     <header className={styles.header}>
       <div
         className={styles.name}
-        onClick={(e) => shallowRouting("hello-there.")}
+        onClick={(e) => shallowRouting('hello-there.')}
       >
         <div>Bálint</div>
         <div>Táborszki</div>
@@ -27,16 +27,16 @@ const Header = ({ setCurrentPortfolio, setPreanimationState }) => {
         <div className={styles.portfolios}>
           {/* {<div className={styles.portfolios}>Portfolios: </div>} */}
           <div
-            id="frontend-development"
+            id='frontend-development'
             onClick={(e) => shallowRouting(e.target.id)}
           >
             Frontend Development
           </div>
-          <div id="graphic-design" onClick={(e) => shallowRouting(e.target.id)}>
+          <div id='graphic-design' onClick={(e) => shallowRouting(e.target.id)}>
             Graphic Design
           </div>
           <div
-            id="translation-and-publishing"
+            id='translation-and-publishing'
             onClick={(e) => shallowRouting(e.target.id)}
           >
             Translation & Publishing
@@ -44,8 +44,8 @@ const Header = ({ setCurrentPortfolio, setPreanimationState }) => {
 
           <div>
             <Button
-              variant="contained"
-              onClick={(e) => shallowRouting("hello-there.")}
+              variant='contained'
+              onClick={(e) => shallowRouting('hello-there.')}
             >
               Contact Me
             </Button>
