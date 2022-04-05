@@ -1,0 +1,33 @@
+.apparel {
+  img {
+    transition-duration: 0.5s;
+    transition-delay: 0.4s;
+    border-bottom-left-radius: 4;
+    border-bottom-right-radius: 4;
+    display: block;
+    width: 100%;
+  }
+
+  img:hover {
+    transform: scale(1.5);
+    aspect-ratio: initial;
+    height: auto;
+  }
+}
+
+.nonApparel {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-inline: auto;
+  gap: 1rem;
+
+  img {
+    width: 100%;
+    transition-duration: 0.5s;
+    transition-delay: 0.4s;
+  }
+
+  img:hover {
+    transform: scale(2);
+  }
+}
