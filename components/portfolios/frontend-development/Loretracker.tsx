@@ -1,16 +1,17 @@
-import Backdrop from "@mui/material/Backdrop";
-import Button from "@mui/material/Button";
-import Fade from "@mui/material/Fade";
-import Modal from "@mui/material/Modal";
-import React, { useState } from "react";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import styles from "../../../styles/Frontend.module.scss";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import CollectionsIcon from "@mui/icons-material/Collections";
-import IconButton from "@mui/material/IconButton";
-import CloseIcon from "@mui/icons-material/Close";
-import InsertLinkIcon from "@mui/icons-material/InsertLink";
+/* eslint-disable @next/next/no-img-element */
+import Backdrop from '@mui/material/Backdrop';
+import Button from '@mui/material/Button';
+import Fade from '@mui/material/Fade';
+import Modal from '@mui/material/Modal';
+import React, { useState } from 'react';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import styles from '../../../styles/Frontend.module.scss';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import CollectionsIcon from '@mui/icons-material/Collections';
+import IconButton from '@mui/material/IconButton';
+import CloseIcon from '@mui/icons-material/Close';
+import InsertLinkIcon from '@mui/icons-material/InsertLink';
 
 export default function Plotter() {
   const [openSWGallery, setOpenSWGallery] = useState(false);
@@ -19,8 +20,9 @@ export default function Plotter() {
     <div className={styles.card}>
       <div className={styles.featuredImage}>
         <img
-          src="./images/loretracker/0.png"
-          style={{ width: "97%", float: "none" }}
+          src='./images/loretracker/0.png'
+          style={{ width: '97%', float: 'none' }}
+          alt=''
         />
 
         <div className={styles.buttonContainer}>
@@ -32,21 +34,21 @@ export default function Plotter() {
           </Button>
           <Button
             startIcon={<GitHubIcon />}
-            component="a"
-            href="https://github.com/merewif/star-wars-loretracker"
-            target="_blank"
-            rel="noopener noreferrer"
+            component='a'
+            href='https://github.com/merewif/star-wars-loretracker'
+            target='_blank'
+            rel='noopener noreferrer'
           >
             View the Source Code
           </Button>
           <br />
           <Button
-            sx={{ width: "97% !important" }}
+            sx={{ width: '97% !important' }}
             startIcon={<InsertLinkIcon />}
-            component="a"
-            href="https://star-wars-loretracker.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
+            component='a'
+            href='https://star-wars-loretracker.vercel.app/'
+            target='_blank'
+            rel='noopener noreferrer'
           >
             Visit the Site
           </Button>
@@ -73,7 +75,7 @@ export default function Plotter() {
         </p>
         <h3>technical details</h3>
         <p>
-          The Loretracker was developed using <strong>React</strong> and{" "}
+          The Loretracker was developed using <strong>React</strong> and{' '}
           <strong>Next.js</strong>. The frontend is hosted on Vercel. The UI
           uses <strong>MUI </strong>Components and the <strong>Lodash </strong>
           library helps in filtering and sorting the data.
@@ -91,13 +93,13 @@ export default function Plotter() {
           <Fade in={openSWGallery}>
             <div>
               <IconButton
-                aria-label="close"
+                aria-label='close'
                 onClick={() => setOpenSWGallery(false)}
                 sx={{
-                  position: "absolute",
+                  position: 'absolute',
                   right: 8,
                   top: 8,
-                  color: "white",
+                  color: 'white',
                 }}
               >
                 <CloseIcon />
@@ -105,17 +107,17 @@ export default function Plotter() {
               <div className={styles.galleryContainer}>
                 <Carousel>
                   <div className={styles.galleryImage}>
-                    <img src="./images/loretracker/1.png" />
+                    <img src='./images/loretracker/1.png' alt='' />
                     <p>Material UI components prettify the user interface.</p>
                   </div>
                   <div>
-                    <img src="./images/loretracker/2.png" />
+                    <img src='./images/loretracker/2.png' alt='' />
                     <p>
                       Titles are loaded into the array that the user can search.
                     </p>
                   </div>
                   <div>
-                    <img src="./images/loretracker/3.png" />
+                    <img src='./images/loretracker/3.png' alt='' />
                     <p>
                       The user can filter the results to see only canon or
                       non-canon, finished or unfinished entries, along with
@@ -123,11 +125,11 @@ export default function Plotter() {
                     </p>
                   </div>
                   <div>
-                    <img src="./images/loretracker/4.png" />
+                    <img src='./images/loretracker/4.png' alt='' />
                     <p>The user can choose from various sorting parameters.</p>
                   </div>
                   <div>
-                    <img src="./images/loretracker/5.png" />
+                    <img src='./images/loretracker/5.png' alt='' />
                     <p>Hover zoom is provided by a single line of css.</p>
                   </div>
                 </Carousel>

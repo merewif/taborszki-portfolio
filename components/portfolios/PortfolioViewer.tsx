@@ -1,14 +1,20 @@
-import React, { useState, useEffect } from "react";
-import styles from "../../styles/PortfolioViewer.module.scss";
-import { motion } from "framer-motion";
-import { useAnimation } from "framer-motion";
-import ModuleFactory from "../ModuleFactory";
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useState, useEffect } from 'react';
+import styles from '../../styles/PortfolioViewer.module.scss';
+import { motion } from 'framer-motion';
+import { useAnimation } from 'framer-motion';
+import ModuleFactory from '../ModuleFactory';
+
+interface PortfolioViewerProps {
+  currentPortfolio: string;
+  preanimationState: boolean;
+}
 
 export default function PortfolioViewer({
   currentPortfolio,
   preanimationState,
-}) {
-  const [elementToOpen, setElementToOpen] = useState("AboutMe");
+}: PortfolioViewerProps) {
+  const [elementToOpen, setElementToOpen] = useState('AboutMe');
 
   const transitionVariants = {
     hidden: { opacity: [1, 0], x: [0, 1000] },
@@ -16,9 +22,9 @@ export default function PortfolioViewer({
   };
   const animationControls = useAnimation();
   function swipeAnimation() {
-    animationControls.start("hidden");
+    animationControls.start('hidden');
     setTimeout(() => {
-      animationControls.start("visible");
+      animationControls.start('visible');
     }, 500);
   }
   useEffect(() => {
@@ -27,19 +33,19 @@ export default function PortfolioViewer({
 
   useEffect(() => {
     // Show Frontend Portfolio
-    if (currentPortfolio === "frontend-development")
-      setElementToOpen("frontend-portfolio");
+    if (currentPortfolio === 'frontend-development')
+      setElementToOpen('frontend-portfolio');
 
     // Show Landing Page
-    if (currentPortfolio === "hello-there.") setElementToOpen("AboutMe");
+    if (currentPortfolio === 'hello-there.') setElementToOpen('AboutMe');
 
     // Show Graphic Design Portfolio
-    if (currentPortfolio === "graphic-design")
-      setElementToOpen("graphic-design-portfolio");
+    if (currentPortfolio === 'graphic-design')
+      setElementToOpen('graphic-design-portfolio');
 
     // Show Translation  Portfolio
-    if (currentPortfolio === "translation-and-publishing")
-      setElementToOpen("translation-portfolio");
+    if (currentPortfolio === 'translation-and-publishing')
+      setElementToOpen('translation-portfolio');
   }, [currentPortfolio]);
 
   return (
@@ -47,7 +53,7 @@ export default function PortfolioViewer({
       <div className={styles.portfolio}>
         <motion.div
           className={styles.portfolioTitleContainer}
-          initial="hidden"
+          initial='hidden'
           animate={animationControls}
           variants={transitionVariants}
           transition={{
@@ -56,19 +62,19 @@ export default function PortfolioViewer({
         >
           <motion.h1
             className={styles.portfolioTitle}
-            initial="hidden"
+            initial='hidden'
             animate={animationControls}
             variants={transitionVariants}
             transition={{
               duration: 0.5,
             }}
           >
-            {currentPortfolio.replace(/-/gm, " ")}
+            {currentPortfolio.replace(/-/gm, ' ')}
           </motion.h1>
-          {currentPortfolio !== "hello-there." ? (
+          {currentPortfolio !== 'hello-there.' ? (
             <motion.h1
               className={styles.portfolioTitle}
-              initial="hidden"
+              initial='hidden'
               animate={animationControls}
               variants={transitionVariants}
               transition={{
@@ -80,7 +86,7 @@ export default function PortfolioViewer({
           ) : null}
         </motion.div>
         <motion.div
-          initial="hidden"
+          initial='hidden'
           animate={animationControls}
           variants={transitionVariants}
           transition={{ duration: 0.65 }}

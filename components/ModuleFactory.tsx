@@ -27,7 +27,11 @@ import galleryStyles from '../styles/Gallery.module.scss';
 
 // MUI
 
-export default function ModuleFactory({ currentModule }) {
+interface ModuleFactoryProps {
+  currentModule: string;
+}
+
+export default function ModuleFactory({ currentModule }: ModuleFactoryProps) {
   // Welcome Page
   if (currentModule === 'AboutMe') return <AboutMe />;
 

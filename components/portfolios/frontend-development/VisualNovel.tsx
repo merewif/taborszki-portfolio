@@ -1,16 +1,17 @@
-import Backdrop from "@mui/material/Backdrop";
-import Button from "@mui/material/Button";
-import Fade from "@mui/material/Fade";
-import Modal from "@mui/material/Modal";
-import React, { useState } from "react";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import styles from "../../../styles/Frontend.module.scss";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import CollectionsIcon from "@mui/icons-material/Collections";
-import InsertLinkIcon from "@mui/icons-material/InsertLink";
-import IconButton from "@mui/material/IconButton";
-import CloseIcon from "@mui/icons-material/Close";
+/* eslint-disable @next/next/no-img-element */
+import Backdrop from '@mui/material/Backdrop';
+import Button from '@mui/material/Button';
+import Fade from '@mui/material/Fade';
+import Modal from '@mui/material/Modal';
+import React, { useState } from 'react';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import styles from '../../../styles/Frontend.module.scss';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import CollectionsIcon from '@mui/icons-material/Collections';
+import InsertLinkIcon from '@mui/icons-material/InsertLink';
+import IconButton from '@mui/material/IconButton';
+import CloseIcon from '@mui/icons-material/Close';
 
 export default function VisualNovel() {
   const [openVNGallery, setOpenVNGallery] = useState(false);
@@ -32,9 +33,9 @@ export default function VisualNovel() {
         </p>
         <h3>technical details</h3>
         <p>
-          Beyond Mortal is written in <strong>javascript</strong> and{" "}
-          <strong>jquery</strong>. It is a{" "}
-          <strong>Serverless application</strong> that uses the{" "}
+          Beyond Mortal is written in <strong>javascript</strong> and{' '}
+          <strong>jquery</strong>. It is a{' '}
+          <strong>Serverless application</strong> that uses the{' '}
           <strong>localStorage</strong> to keep track of user progress. Savegame
           files can be downloaded and loaded into the game at any time. The text
           is stored in <strong>JSON files</strong> and is conditionally loaded
@@ -67,13 +68,13 @@ export default function VisualNovel() {
           <Fade in={openVNGallery}>
             <div>
               <IconButton
-                aria-label="close"
+                aria-label='close'
                 onClick={() => setOpenVNGallery(false)}
                 sx={{
-                  position: "absolute",
+                  position: 'absolute',
                   right: 8,
                   top: 8,
-                  color: "white",
+                  color: 'white',
                 }}
               >
                 <CloseIcon />
@@ -84,21 +85,21 @@ export default function VisualNovel() {
               >
                 <Carousel>
                   <div className={styles.galleryImage}>
-                    <img src="./images/beyond-mortal/1.png" />
+                    <img src='./images/beyond-mortal/1.png' alt='' />
                     <p>
                       Players can earn various achievements based on the choices
                       they make throughout the game.
                     </p>
                   </div>
                   <div className={styles.galleryImage}>
-                    <img src="./images/beyond-mortal/2.png" />
+                    <img src='./images/beyond-mortal/2.png' alt='' />
                     <p>
                       The visual novel is divided into chapters for ease of
                       replayability.
                     </p>
                   </div>
                   <div className={styles.galleryImage}>
-                    <img src="./images/beyond-mortal/3.png" />
+                    <img src='./images/beyond-mortal/3.png' alt='' />
                     <p>
                       Click by click the game presents the user the next
                       sentence of the story. Savegame files can be downloaded
@@ -108,18 +109,18 @@ export default function VisualNovel() {
                     </p>
                   </div>
                   <div className={styles.galleryImage}>
-                    <img src="./images/beyond-mortal/4.png" />
+                    <img src='./images/beyond-mortal/4.png' alt='' />
                     <p>
                       As an interactive video game, player choice determines the
                       course of the story.
                     </p>
                   </div>
                   <div className={styles.galleryImage}>
-                    <img src="./images/beyond-mortal/5.png" />
+                    <img src='./images/beyond-mortal/5.png' alt='' />
                     <p>The game is fully optimized for mobile screens.</p>
                   </div>
                   <div className={styles.galleryImage}>
-                    <img src="./images/beyond-mortal/6.png" />
+                    <img src='./images/beyond-mortal/6.png' alt='' />
                     <p>
                       The game is installable through the browser as a
                       Progressive Web App (PWA).
@@ -132,7 +133,7 @@ export default function VisualNovel() {
         </Modal>
       </div>
       <div className={styles.featuredImage}>
-        <img src="./images/beyond-mortal/0.png" />
+        <img src='./images/beyond-mortal/0.png' alt='' />
         <div className={styles.buttonContainer}>
           <Button
             onClick={() => setOpenVNGallery(true)}
@@ -142,29 +143,29 @@ export default function VisualNovel() {
           </Button>
           <Button
             startIcon={<GitHubIcon />}
-            component="a"
-            href="https://github.com/merewif/tales-of-strange-aeons"
-            target="_blank"
-            rel="noopener noreferrer"
+            component='a'
+            href='https://github.com/merewif/tales-of-strange-aeons'
+            target='_blank'
+            rel='noopener noreferrer'
           >
             View the Source Code
           </Button>
           <br />
           <Button
             startIcon={<InsertLinkIcon />}
-            component="a"
-            href="https://merewif.github.io/tales-of-strange-aeons/game.html"
-            target="_blank"
-            rel="noopener noreferrer"
+            component='a'
+            href='https://merewif.github.io/tales-of-strange-aeons/game.html'
+            target='_blank'
+            rel='noopener noreferrer'
           >
             Visit the Game
           </Button>
           <Button
             startIcon={<InsertLinkIcon />}
-            component="a"
-            href="https://merewif.github.io/tales-of-strange-aeons/index.html"
-            target="_blank"
-            rel="noopener noreferrer"
+            component='a'
+            href='https://merewif.github.io/tales-of-strange-aeons/index.html'
+            target='_blank'
+            rel='noopener noreferrer'
           >
             Visit the Main Site
           </Button>

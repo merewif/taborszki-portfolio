@@ -3,10 +3,15 @@ import { useRouter } from 'next/router';
 import react, { useState, useEffect } from 'react';
 import Button from '@mui/material/Button';
 
-const Header = ({ setCurrentPortfolio, setPreanimationState }) => {
+interface HeaderProps {
+  setCurrentPortfolio: React.Dispatch<React.SetStateAction<string>>;
+  setPreanimationState: React.Dispatch<React.SetStateAction<string>>;
+}
+
+const Header = ({ setCurrentPortfolio, setPreanimationState }: HeaderProps) => {
   const router = useRouter();
 
-  const shallowRouting = (url) => {
+  const shallowRouting = (url: string) => {
     setPreanimationState(url);
     router.push(`?${url}`, undefined, { shallow: true });
     setTimeout(() => {
@@ -28,16 +33,19 @@ const Header = ({ setCurrentPortfolio, setPreanimationState }) => {
           {/* {<div className={styles.portfolios}>Portfolios: </div>} */}
           <div
             id='frontend-development'
-            onClick={(e) => shallowRouting(e.target.id)}
+            onClick={() => shallowRouting('frontend-development')}
           >
             Frontend Development
           </div>
-          <div id='graphic-design' onClick={(e) => shallowRouting(e.target.id)}>
+          <div
+            id='graphic-design'
+            onClick={() => shallowRouting('graphic-design')}
+          >
             Graphic Design
           </div>
           <div
             id='translation-and-publishing'
-            onClick={(e) => shallowRouting(e.target.id)}
+            onClick={() => shallowRouting('translation-and-publishing')}
           >
             Translation & Publishing
           </div>
@@ -45,7 +53,7 @@ const Header = ({ setCurrentPortfolio, setPreanimationState }) => {
           <div>
             <Button
               variant='contained'
-              onClick={(e) => shallowRouting('hello-there.')}
+              onClick={() => shallowRouting('hello-there.')}
             >
               Contact Me
             </Button>
