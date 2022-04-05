@@ -49,7 +49,7 @@ export default function Plotter() {
           <Button
             startIcon={<DownloadIcon />}
             component="a"
-            href="https://mega.nz/file/iVxn3abT#86Hk-FnqF6CHIqfg7V0Gj6hvPNIM2rSSeonG9gR4agQ"
+            href="https://github.com/merewif/plotter/releases/tag/v1.0.0"
             target="_blank"
             rel="noopener noreferrer"
           >
