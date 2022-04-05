@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import styles from "../../styles/PortfolioViewer.module.scss";
 import { motion } from "framer-motion";
 import { useAnimation } from "framer-motion";
-import ModuleDealer from "../ModuleDealer";
+import ModuleFactory from "../ModuleFactory";
 
 export default function PortfolioViewer({
   currentPortfolio,
@@ -86,7 +86,7 @@ export default function PortfolioViewer({
           transition={{ duration: 0.65 }}
           className={styles.itemsContainer}
         >
-          <ModuleDealer currentModule={elementToOpen} />
+          <ModuleFactory currentModule={elementToOpen} />
         </motion.div>
       </div>
     </div>
