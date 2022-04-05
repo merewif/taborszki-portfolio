@@ -67,7 +67,9 @@ export default function Plotter() {
           content - movies, series, comics, books, video games. I was using
           Goodreads to track books but I was also interested in other media that
           Goodreads didn&apos;t accomodate, so I thought I should build my own,
-          and so I did.
+          and so I did. I shared the project with Star Wars fans on Reddit who
+          really appreciated it and gave me valuable feedback on bugs and
+          features they would like to see, which I implemented right away.
         </p>
         <h3>technical details</h3>
         <p>
