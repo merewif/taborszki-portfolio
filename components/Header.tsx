@@ -43,12 +43,12 @@ const Header = ({ setCurrentPortfolio, setPreanimationState }: HeaderProps) => {
           >
             Graphic Design
           </div>
-          <div
+          {/* {<div
             id='translation-and-publishing'
             onClick={() => shallowRouting('translation-and-publishing')}
           >
             Translation & Publishing
-          </div>
+          </div>} */}
 
           <div>
             <Button
