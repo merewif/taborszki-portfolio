@@ -48,16 +48,16 @@ export default function ModuleFactory({ currentModule }: ModuleFactoryProps) {
   // Graphic Design Portfolio
   if (currentModule === 'graphic-design-portfolio') {
     const bookcovers = [
-      '.\\images\\book-covers/1.png',
-      '.\\images\\book-covers/10.png',
-      '.\\images\\book-covers/2.png',
-      '.\\images\\book-covers/3.png',
-      '.\\images\\book-covers/4.png',
-      '.\\images\\book-covers/5.png',
-      '.\\images\\book-covers/6.png',
-      '.\\images\\book-covers/7.png',
-      '.\\images\\book-covers/8.png',
-      '.\\images\\book-covers/9.jpg',
+      '.\\images\\book-covers/1-min.png',
+      '.\\images\\book-covers/10-min.png',
+      '.\\images\\book-covers/2-min.png',
+      '.\\images\\book-covers/3-min.png',
+      '.\\images\\book-covers/4-min.png',
+      '.\\images\\book-covers/5-min.png',
+      '.\\images\\book-covers/6-min.png',
+      '.\\images\\book-covers/7-min.png',
+      '.\\images\\book-covers/8-min.png',
+      '.\\images\\book-covers/9-min.jpg',
     ];
     const blogcovers = [
       '.\\images\\blogpost-images/1.webp',
