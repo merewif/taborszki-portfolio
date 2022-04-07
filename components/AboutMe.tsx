@@ -138,7 +138,7 @@ export default function AboutMe() {
             <LinkedInIcon />
             <p>
               <a
-                href='https://www.linkedin.com/in/b%C3%A1lint-t%C3%A1borszki-613b6222b/'
+                href='https://www.linkedin.com/in/taborszki'
                 target='_blank'
                 rel='noopener noreferrer'
               >
