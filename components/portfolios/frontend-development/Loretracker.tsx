@@ -75,9 +75,10 @@ export default function Plotter() {
         </p>
         <h3>technical details</h3>
         <p>
-          The Loretracker was developed using <strong>React</strong> and{' '}
-          <strong>Next.js</strong>. The frontend is hosted on Vercel. The UI
-          uses <strong>MUI </strong>Components and the <strong>Lodash </strong>
+          The Loretracker was developed using <strong>React</strong> with{' '}
+          <strong>Next.js</strong> and <strong>TypeScript</strong>. The frontend
+          is hosted on Vercel. The UI uses <strong>MUI </strong>Components and
+          the <strong>Lodash </strong>
           library helps in filtering and sorting the data.
         </p>
 
