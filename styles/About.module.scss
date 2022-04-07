@@ -1,4 +1,67 @@
 .aboutContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 3fr 1fr;
+  min-height: 60vh;
+  gap: 5vw;
+
+  h2 {
+    text-transform: uppercase;
+    font-weight: 900;
+    padding-bottom: 10px;
+    margin-top: 50px;
+    padding-left: 20px;
+    border-bottom: 1px dotted white;
+  }
+
+  .introduction {
+    p {
+      text-align: justify;
+    }
+  }
+
+  .skills {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    p {
+      margin-block: 5px;
+      border-right: 1px solid white;
+      padding-inline: 5px;
+    }
+  }
+
+  .interests {
+    p {
+      margin-block: 2px;
+    }
+  }
+
+  a {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+  }
+
+  .contacts {
+    div {
+      display: flex;
+      align-items: center;
+      p {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .goodreadsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+    h2 {
+      font-weight: 300;
+      text-transform: none;
+      font-size: 1rem;
+      border: none;
+    }
+  }
 }
