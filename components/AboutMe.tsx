@@ -20,21 +20,21 @@ export default function AboutMe() {
         <div>
           <div className={styles.introduction}>
             <p>
-              Ever since I can remember I was always drawn towards aesthetic
+              Ever since I can remember I was always drawn toward aesthetic
               beauty as if it was my calling. I did judge books by their cover
               and I dabbled in all forms of art. It was this passion that guided
-              me when I designed book covers, book layouts or graphics for
+              me when I designed book covers, book layouts, or graphics for
               apparel and web content.
             </p>
             <p>
               Developing frontends is yet another outlet in which I can put my
-              instinct towards the sublime and beautiful to good use and I find
+              instinct toward the sublime and beautiful to good use and I find
               it a genuine joy to be able to sharpen and utilize my skills in
               that domain.
             </p>
             <p>
               My previous experience includes working as a freelance writer
-              cratfing articles and marketing copy for English clients,
+              cratfting articles and marketing copy for English clients,
               translating over 20 books and over 100 articles - including highly
               technical academic publications - from English to Hungarian on the
               topics of economic science, social philosophy and sociology,
