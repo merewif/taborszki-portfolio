@@ -120,7 +120,7 @@ export default function AboutMe() {
         </div>
 
         <div className={styles.contacts}>
-          <img src='./images/pfp.png' alt='' />
+          <img src='./pfp.png' alt='' />
           <div>
             <AlternateEmailIcon />
             <p>
