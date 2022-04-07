@@ -43,6 +43,11 @@
   }
 
   .contacts {
+    img {
+      width: 100%;
+      border-radius: 25px;
+      border: 2px solid white;
+    }
     div {
       display: flex;
       align-items: center;
