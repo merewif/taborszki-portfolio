@@ -34,7 +34,7 @@ export default function AboutMe() {
             </p>
             <p>
               My previous experience includes working as a freelance writer
-              cratfting articles and marketing copy for English clients,
+              crafting articles and marketing copy for English clients,
               translating over 20 books and over 100 articles - including highly
               technical academic publications - from English to Hungarian on the
               topics of economic science, social philosophy and sociology,
