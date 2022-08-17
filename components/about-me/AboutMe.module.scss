@@ -48,6 +48,8 @@
         border-right: 5px solid black;
         height: 100%;
         padding-top: 10px;
+        display: flex;
+        flex-direction: column;
 
         p {
           margin-block: 5px;
