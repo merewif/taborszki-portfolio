@@ -78,10 +78,11 @@ export default function AboutMe() {
                   <span>Web</span>
                   <span>Logo</span>
                   <span>Print</span>
-                  <span>Apparel</span>                  
+                  <span>Apparel</span>
+                  <span>Merchandise</span>
                   <span>Typography</span>
-                  <span>Book Cover & Interior</span>
-                  
+                  <span>Book Cover</span>
+                  <span>Book Interior</span>
                 </div>
               </div>
               <div>
@@ -151,7 +152,7 @@ export default function AboutMe() {
           </div> */}
         </div>
 
-        <div className={styles.contacts}>          
+        <div className={styles.contacts}>
           <div>
             <AlternateEmailIcon />
             <p>

@@ -76,6 +76,9 @@
   }
 
   .contacts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     img {
       width: 100%;
       border-radius: 25px;
@@ -87,6 +90,11 @@
       p {
         margin-left: 10px;
       }
+    }
+
+    button {
+      margin-top: 0;
+      max-width: 20%;
     }
   }
 
