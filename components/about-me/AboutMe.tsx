@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/About.module.scss';
+import styles from './AboutMe.module.scss';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
@@ -19,7 +19,7 @@ export default function AboutMe() {
       <div className={styles.aboutContainer}>
         <div>
           <div className={styles.introduction}>
-            <p>
+            {/* <p>
               Ever since I can remember I was always drawn toward aesthetic
               beauty as if it was my calling. I did judge books by their cover
               and I dabbled in all forms of art. It was this passion that guided
@@ -40,7 +40,7 @@ export default function AboutMe() {
               topics of economic science, social philosophy and sociology,
               designing and publishing books in ebook and paperback formats, and
               designing apparel for a global customer base.
-            </p>
+            </p> */}
           </div>
           <h2>what I know</h2>
           <div className={styles.skills}>
@@ -63,7 +63,7 @@ export default function AboutMe() {
             <p>WordPress</p>
             <p>WooCommerce</p>
           </div>
-          <h2>what i love</h2>
+          {/* <h2>what i love</h2>
           <div className={styles.interests}>
             <p>
               I love creating things people find useful and valuable,and I love
@@ -85,7 +85,7 @@ export default function AboutMe() {
             <p>I love individual liberty as the highest political value.</p>
             <p>I love collecting mounts in World of Warcraft.</p>
             <p>I love cats, although my allergy disapproves of that.</p>
-          </div>
+          </div> */}
           <div className={styles.goodreadsContainer}>
             <div>
               <h2>
@@ -120,7 +120,6 @@ export default function AboutMe() {
         </div>
 
         <div className={styles.contacts}>
-          <img src='./pfp.png' alt='' />
           <div>
             <AlternateEmailIcon />
             <p>

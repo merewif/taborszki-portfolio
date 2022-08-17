@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
-import styles from '../../../styles/ApparelDesign.module.scss';
+import styles from '../../../../styles/ApparelDesign.module.scss';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Masonry from '@mui/lab/Masonry';

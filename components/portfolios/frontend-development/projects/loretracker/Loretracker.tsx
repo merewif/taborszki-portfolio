@@ -6,14 +6,14 @@ import Modal from '@mui/material/Modal';
 import React, { useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import styles from '../../../styles/Frontend.module.scss';
+import styles from './Loretracker.module.scss';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import CollectionsIcon from '@mui/icons-material/Collections';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import InsertLinkIcon from '@mui/icons-material/InsertLink';
 
-export default function Plotter() {
+export default function Loretracker() {
   const [openSWGallery, setOpenSWGallery] = useState(false);
 
   return (

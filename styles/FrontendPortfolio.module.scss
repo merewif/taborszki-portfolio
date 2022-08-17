@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-block: 50px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid black;
   align-items: center;
 
   h1 {
@@ -14,7 +14,7 @@
   h3 {
     font-weight: 900;
     text-transform: uppercase;
-    border-bottom: 1px dotted white;
+    border-bottom: 1px dotted black;
     padding: 3px;
     margin-bottom: 0;
   }
@@ -73,8 +73,6 @@
   }
 
   p {
-    background-color: black;
-    color: white;
     font-family: "Montserrat";
     margin: 0;
     padding: 10px;

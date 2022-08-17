@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
-import styles from '../../../styles/Gallery.module.scss';
+import styles from '../../../../styles/Gallery.module.scss';
 
 interface GalleryProps {
   files: string[];

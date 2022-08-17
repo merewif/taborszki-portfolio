@@ -6,7 +6,7 @@ import Modal from '@mui/material/Modal';
 import React, { useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import styles from '../../../styles/Frontend.module.scss';
+import styles from './Plotter.module.scss';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import CollectionsIcon from '@mui/icons-material/Collections';
 import DownloadIcon from '@mui/icons-material/Download';

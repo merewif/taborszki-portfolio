@@ -6,6 +6,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Montserrat';
 }
 
 a {
@@ -19,26 +20,26 @@ a {
 
 html {
   overflow-y: scroll;
-  scrollbar-color: #fff #000;
+  scrollbar-color: #000 #fff;
   scrollbar-width: thin;
 }
 
 html::-webkit-scrollbar {
-  background-color: #fff;
+  background-color: #000;
   width: 8px;
 }
 
 .MuiButton-root {
-  background: white !important;
-  color: black !important;
+  background: black !important;
+  color: white !important;
   font-family: "Montserrat" !important;
   font-weight: 900 !important;
-  border: 1px solid white !important;
+  border: 1px solid black !important;
 }
 
 .MuiButton-root:hover {
-  background: black !important;
-  color: white !important;
+  background: white !important;
+  color: black !important;
 }
 
 .control-dots {
