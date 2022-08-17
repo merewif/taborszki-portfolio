@@ -54,23 +54,15 @@ export default function Plotter() {
           be really useful to have a tool with which I could visually represent my plot on a line chart. I
           tried some other websites created similarly for authors, but they were either so bloated that there
           was an actual learning curve to figuring out how to use them, or they simply didn&apos;t have what I
-          was looking for. So I decided to make my own and the idea quickly expanded into a{" "}
-          <strong>Characters</strong>, a <strong>Plot</strong> and a <strong>Worldbuilding</strong> component
+          was looking for. So I decided to make my own and the idea quickly expanded into a
+          <strong> Characters</strong>, a <strong>Plot</strong> and a <strong>Worldbuilding</strong> component
           after a few days of brainstorming.
         </p>
         <h3>technical details</h3>
         <p>
-          Plotter is written in <strong>React</strong>; in fact it was the first project I wrote using React
-          and coding it was my way of learning its ins and outs. Because I was just familiarizing myself with
-          React, some
-          <strong>jquery</strong> was used to manipulate CSS styles based on user interactions, although in
-          hindsight this should have been done by simply toggling CSS classes. It is a{" "}
-          <strong>serverless application</strong> that stores the user data in the localStorage. The user
-          interface utilizes several
-          <strong>Material UI</strong> components. The application is hosted on
-          <strong>Google Firebase</strong>. The executable file was created with
-          <strong>Electron</strong>. The aesthetics of the application follow
-          <strong>Minimalist design</strong> principles to minimize distractions.
+          Plotter is written in <strong>React</strong>; in fact it was the first project I wrote using React and coding it was my way of learning its ins and outs. Because I was just familiarizing myself with React, some <strong>jquery</strong> was used to manipulate CSS styles based on user interactions, although in hindsight this should have been done by simply toggling CSS classes. It is a <strong>serverless application</strong> that stores the user data in the localStorage. The user interface utilizes several <strong>Material UI</strong> components. The application is hosted on <strong>Google Firebase</strong>. The executable file was created with 
+          <strong> Electron</strong>. The aesthetics of the application follow
+          <strong> Minimalist design</strong> principles to minimize distractions.
         </p>
       </>
     );

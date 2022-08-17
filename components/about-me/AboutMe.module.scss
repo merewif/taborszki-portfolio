@@ -1,16 +1,28 @@
 .aboutContainer {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
   gap: 5vw;
 
   h2 {
     text-transform: uppercase;
     font-weight: 900;
-    padding-bottom: 10px;
-    margin-top: 50px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-left: 25px;
     padding-left: 20px;
-    border-bottom: 1px dotted black;
+    border-left: 5px solid black;
+  }
+
+  h4 {
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 25px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    padding-left: 15px;
   }
 
   .introduction {
@@ -19,15 +31,30 @@
     }
   }
 
-  .skills {
-    padding: 0;
+  .skillSectionContainer {
+    height: 100vh;
+
+  }
+
+  .skillBox {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .skills {
+    padding-right: 20px;
+    margin-left: 35px;
+    border-right: 5px solid black;
+    height: 100%;
+    padding-top: 10px;
 
     p {
       margin-block: 5px;
-      border-right: 1px solid black;
-      padding-inline: 5px;
+    }
+
+    span {
+      display: block;
+      margin-left: 20px;
     }
   }
 

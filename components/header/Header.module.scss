@@ -1,28 +1,10 @@
 .header {
   font-family: "Montserrat";
   display: flex;
-  height: 250px;
+  height: 100vh;
   align-items: center;
-}
-
-.menuContainer {
-  display: grid;
-  gap: 1rem;
-  margin-right: 20px;
-  margin-left: auto;
-  div {
-    cursor: pointer;
-    padding: 10px;
-  }
-}
-
-.aboutMeBtn {
-  background: white;
-  color: black;
-}
-
-.label {
-  cursor: default;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .name {
@@ -30,12 +12,12 @@
   gap: 0.75rem;
   margin-left: 20px;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 3.65rem;
   cursor: default;
   margin-inline: auto;
 
   div:nth-child(1) {
-    font-weight: 200;
+    font-weight: 100;
   }
 
   div:nth-child(2) {
@@ -43,9 +25,16 @@
   }
 }
 
-.portfolios,
-.info {
+.titles {
   display: flex;
-  gap: 10px;
-  align-items: center;
+  margin-top: 10px;
+  font-weight: 300;
+
+  div {
+    padding-inline: 20px;
+    border-right: 1px solid black;
+    &:last-child {
+      border: none;
+    }
+  }
 }

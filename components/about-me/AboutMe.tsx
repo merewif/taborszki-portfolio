@@ -1,17 +1,17 @@
-import React from 'react';
-import styles from './AboutMe.module.scss';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
-import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
-import Button from '@mui/material/Button';
-import DownloadIcon from '@mui/icons-material/Download';
-import GoodreadsBookshelf from 'react-goodreads-shelf';
-import { Email } from 'react-obfuscate-email';
+import React from "react";
+import styles from "./AboutMe.module.scss";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
+import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
+import Button from "@mui/material/Button";
+import DownloadIcon from "@mui/icons-material/Download";
+import GoodreadsBookshelf from "react-goodreads-shelf";
+import { Email } from "react-obfuscate-email";
 
 export default function AboutMe() {
   const downloadResume = () => {
-    window.open('./Balint-Taborszki-CV-small.pdf', '_blank');
+    window.open("./Balint-Taborszki-CV-small.pdf", "_blank");
   };
 
   return (
@@ -42,26 +42,65 @@ export default function AboutMe() {
               designing apparel for a global customer base.
             </p> */}
           </div>
-          <h2>what I know</h2>
-          <div className={styles.skills}>
-            <p>Web Design</p>
-            <p>CSS</p>
-            <p>Sass</p>
-            <p>HTML</p>
-            <p>JavaScript</p>
-            <p>jQuery</p>
-            <p>React</p>
-            <p>TypeScript</p>
-            <p>Translation</p>
-            <p>Copywriting</p>
-            <p>Book design</p>
-            <p>Apparel design</p>
-            <p>Photoshop</p>
-            <p>Illustrator</p>
-            <p>Figma</p>
-            <p>Typography</p>
-            <p>WordPress</p>
-            <p>WooCommerce</p>
+          <div className={styles.skillSectionContainer}>
+            <h2>what I bring to the table</h2>
+            <div className={styles.skillBox}>
+              <div>
+                <h4>Web Development</h4>
+                <div className={styles.skills}>
+                  <p>jQuery</p>
+                  <p>JavaScript / TypeScript</p>
+                  <p>CSS / SCSS / Tailwind CSS</p>
+                  <p>Node.js</p>
+                  <p>React</p>
+                  <span>Next.js</span>
+                  <p>Angular</p>
+                  <p>Firebase</p>
+                  <p>Supabase</p>
+                  <p>WordPress</p>
+                  <span>WooCommerce</span>
+                  <span>Headless CMS</span>
+                  <p>General Site Improvements</p>
+                  <span>UX Research</span>
+                  <span>GDPR Compliance Review</span>
+                  <span>Search Engine Optimization</span>
+                  <span>Progressive Web Applications</span>
+                  <span>Website Performance Optimization</span>
+                  <p>HTML Email Template Development</p>
+                </div>
+              </div>
+              <div>
+                <h4>Visual Design</h4>
+                <div className={styles.skills}>
+                  <p>Photoshop</p>
+                  <p>Graphic Design </p>
+                  <span>UI</span>
+                  <span>Web</span>
+                  <span>Logo</span>
+                  <span>Print</span>
+                  <span>Apparel</span>                  
+                  <span>Typography</span>
+                  <span>Book Cover & Interior</span>
+                  
+                </div>
+              </div>
+              <div>
+                <h4>Publishing</h4>
+                <div className={styles.skills}>
+                  <p>Microsoft Word</p>
+                  <p>Copywriting</p>
+                  <p>Content Writing</p>
+                  <p>Translation (Enligsh / Hungarian)</p>
+                </div>
+              </div>
+              <div>
+                <h4>Soft Skills</h4>
+                <div className={styles.skills}>
+                  <p>Communicating Design Decisions</p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
           </div>
           {/* <h2>what i love</h2>
           <div className={styles.interests}>
@@ -86,50 +125,43 @@ export default function AboutMe() {
             <p>I love collecting mounts in World of Warcraft.</p>
             <p>I love cats, although my allergy disapproves of that.</p>
           </div> */}
-          <div className={styles.goodreadsContainer}>
+          {/* <div className={styles.goodreadsContainer}>
             <div>
               <h2>
                 <a
-                  href='https://www.goodreads.com/review/list/31516165-b-lint-t-borszki?shelf=currently-reading'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
+                  href="https://www.goodreads.com/review/list/31516165-b-lint-t-borszki?shelf=currently-reading"
+                  target="_blank"
+                  rel="noopener noreferrer">
                   What I&apos;m currently reading:
                 </a>
               </h2>
-              <GoodreadsBookshelf
-                limit={5}
-                shelf='currently-reading'
-                userId='31516165'
-                width='16%'
-              />
+              <GoodreadsBookshelf limit={5} shelf="currently-reading" userId="31516165" width="16%" />
             </div>
             <div>
               <h2>
                 <a
-                  href='https://www.goodreads.com/review/list/31516165-b-lint-t-borszki?shelf=read'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
+                  href="https://www.goodreads.com/review/list/31516165-b-lint-t-borszki?shelf=read"
+                  target="_blank"
+                  rel="noopener noreferrer">
                   What I&apos;ve recently read:
                 </a>
               </h2>
-              <GoodreadsBookshelf limit={5} userId='31516165' width='16%' />
+              <GoodreadsBookshelf limit={5} userId="31516165" width="16%" />
             </div>
-          </div>
+          </div> */}
         </div>
 
-        <div className={styles.contacts}>
+        <div className={styles.contacts}>          
           <div>
             <AlternateEmailIcon />
             <p>
-              <Email email='taborszkib@gmail.com'>taborszkib@gmail.com</Email>
+              <Email email="taborszkib@gmail.com">taborszkib@gmail.com</Email>
             </p>
           </div>
           <div>
             <LocalPhoneIcon />
             <p>
-              <a href='tel:+36702181428' rel='noopener noreferrer'>
+              <a href="tel:+36702181428" rel="noopener noreferrer">
                 +36 70 218 1428
               </a>
             </p>
@@ -137,11 +169,7 @@ export default function AboutMe() {
           <div>
             <LinkedInIcon />
             <p>
-              <a
-                href='https://www.linkedin.com/in/taborszki'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
+              <a href="https://www.linkedin.com/in/taborszki" target="_blank" rel="noopener noreferrer">
                 Bálint Táborszki
               </a>
             </p>
@@ -149,21 +177,16 @@ export default function AboutMe() {
           <div>
             <GitHubIcon />
             <p>
-              <a
-                href='https://github.com/merewif?tab=repositories'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
+              <a href="https://github.com/merewif?tab=repositories" target="_blank" rel="noopener noreferrer">
                 Merewif
               </a>
             </p>
           </div>
           <Button
-            variant='contained'
+            variant="contained"
             endIcon={<DownloadIcon />}
-            sx={{ width: '100%', marginTop: '20px' }}
-            onClick={downloadResume}
-          >
+            sx={{ width: "100%", marginTop: "20px" }}
+            onClick={downloadResume}>
             Download Resume
           </Button>
         </div>

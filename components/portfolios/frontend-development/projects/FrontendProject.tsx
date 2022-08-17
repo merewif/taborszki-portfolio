@@ -33,9 +33,8 @@ export default function FrontendProject({ data }: FrontendProjectProps) {
 
   return (
     <div className={styles.card}>
-      <div className={styles.featuredImage}>
-        <img src={data.featuredImage} style={{ width: "97%", float: "none" }} alt="" />
-
+      <div className={styles.controls}>
+        <img className={styles.featuredImage} src={data.featuredImage} style={{ width: "97%", float: "none" }} alt="" />
         <div className={styles.buttonContainer}>
           <Button onClick={() => setOpenSWGallery(true)} startIcon={<CollectionsIcon />}>
             Gallery
