@@ -33,28 +33,32 @@
 
   .skillSectionContainer {
     height: 100vh;
-
   }
 
   .skillBox {
     display: flex;
-    flex-direction: row;
-  }
+    align-items: stretch;
 
-  .skills {
-    padding-right: 20px;
-    margin-left: 35px;
-    border-right: 5px solid black;
-    height: 100%;
-    padding-top: 10px;
+    div {
+      flex: 1;
 
-    p {
-      margin-block: 5px;
-    }
+      .skills {
+        padding-right: 20px;
+        margin-left: 35px;
+        border-right: 5px solid black;
+        height: 100%;
+        padding-top: 10px;
 
-    span {
-      display: block;
-      margin-left: 20px;
+        p {
+          margin-block: 5px;
+        }
+
+        span {
+          display: block;
+          margin-left: 15px;
+          font-size: 0.85rem;
+        }
+      }
     }
   }
 
