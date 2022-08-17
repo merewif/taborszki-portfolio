@@ -1,11 +1,11 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.scss";
-import Header from "../components/Header";
-import React, { useState, useEffect } from "react";
+import Header from "../components/header/Header";
+import React from "react";
 import AboutMe from "../components/about-me/AboutMe";
 import FrontendPortfolio from "../components/portfolios/frontend-development/FrontendPortfolio";
 import GraphicDesignPortfolio from "../components/portfolios/graphic-design/GraphicDesignPortfolio";
-import Footer from "../components/Footer";
+import Footer from "../components/footer/Footer";
 
 export default function Home() {
   return (
