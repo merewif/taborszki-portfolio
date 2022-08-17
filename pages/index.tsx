@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.scss';
 import Header from '../components/Header';
-import react, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import PortfolioViewer from '../components/portfolios/PortfolioViewer';
 

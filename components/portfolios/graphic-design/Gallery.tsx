@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
-import useSWR from 'swr';
 import styles from '../../../styles/Gallery.module.scss';
 
 interface GalleryProps {
@@ -8,9 +7,6 @@ interface GalleryProps {
 }
 
 export default function Gallery({ files }: GalleryProps) {
-  // const fetcher = (url) => fetch(url).then((res) => res.json());
-  //  const { data } = useSWR("/api/images", fetcher);
-
   return (
     <>
       <div className={styles.nonApparel}>
