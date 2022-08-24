@@ -28,7 +28,7 @@ export default function ApparelDesign() {
   ];
   return (
     <>
-      <Box sx={{ width: '100%', minHeight: 829 }}>
+      <Box sx={{ width: '100%' }}>
         <Masonry columns={3} spacing={2}>
           {IMAGES.map((item, index) => (
             <div key={index} className={styles.imageContainer}>
