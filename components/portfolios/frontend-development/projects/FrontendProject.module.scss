@@ -38,6 +38,10 @@
 .controls {
   display: flex;
   flex-direction: column;
+
+  img {
+    width: 97%;
+  }
 }
 
 .buttonContainer {
@@ -57,6 +61,7 @@
 
 .galleryContainer {
   width: auto;
+  max-width: 95vw;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -80,10 +85,21 @@
   }
 }
 
-
 @media screen and (max-width: 900px) {
   .card {
     grid-template-columns: 1fr;
   }
-  
+
+  .controls {
+    img {
+      width: 100%;
+    }
+  }
+
+  .info {
+    grid-row: 1;
+    p {
+      font-size: 0.8rem;
+    }
+  }
 }

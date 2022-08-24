@@ -3,16 +3,6 @@
   flex-direction: column;
   gap: 5vw;
 
-  h2 {
-    text-transform: uppercase;
-    font-weight: 900;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    margin-left: 25px;
-    padding-left: 20px;
-    border-left: 5px solid black;
-  }
-
   h4 {
     text-transform: uppercase;
     font-weight: 900;
@@ -32,7 +22,7 @@
   }
 
   .skillSectionContainer {
-    height: 100vh;
+    min-height: 100vh;
   }
 
   .skillBox {
@@ -75,29 +65,6 @@
     text-decoration-style: dotted;
   }
 
-  .contacts {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    img {
-      width: 100%;
-      border-radius: 25px;
-      border: 1px dotted black;
-    }
-    div {
-      display: flex;
-      align-items: center;
-      p {
-        margin-left: 10px;
-      }
-    }
-
-    button {
-      margin-top: 0;
-      max-width: 20%;
-    }
-  }
-
   .goodreadsContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -109,5 +76,11 @@
       font-size: 1rem;
       border: none;
     }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .skillBox {
+    flex-direction: column;
   }
 }

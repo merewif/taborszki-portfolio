@@ -1,8 +1,17 @@
 .main {
   min-height: 100vh;
   padding-inline: 5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-bottom: 5rem;
 }
 
 .container {
   overflow-x: hidden;
+}
+
+@media screen and (max-width: 900px) {
+  .main {
+    padding-inline: 10px;
+  }
 }
