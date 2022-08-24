@@ -25,7 +25,6 @@ export default function GraphicDesignPortfolio() {
     ".\\images\\blogpost-images/10.webp",
     ".\\images\\blogpost-images/11.webp",
     ".\\images\\blogpost-images/12.webp",
-    ".\\images\\blogpost-images/13.webp",
     ".\\images\\blogpost-images/15.webp",
     ".\\images\\blogpost-images/16.webp",
     ".\\images\\blogpost-images/17.webp",
