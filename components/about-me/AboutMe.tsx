@@ -84,13 +84,13 @@ export default function AboutMe() {
                   <p>Translation (Enligsh / Hungarian)</p>
                 </div>
               </div>
-              <div>
+              {/*<div>
                 <h4>Soft Skills</h4>
                 <div className={styles.skills}>
                   <p>Communicating Design Decisions</p>
                   <p></p>
                 </div>
-              </div>
+          </div>*/}
             </div>
           </div>
           {/* <h2>what i love</h2>
